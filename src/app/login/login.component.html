@@ -1,0 +1,21 @@
+<p>login works!</p>
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <form action="" (ngSubmit)="login()" [formGroup]="form">
+            <div class="mb-3">
+                <input type="text" placeholder="enter username" formControlName="Username">
+                <div class="text-danger form-text" *ngIf="Username && Username.invalid && Username.touched">username field invalid</div>
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="enter password" formControlName="Password">
+                <div class="text-danger form-text" *ngIf="Password && Password.invalid && Password.touched">password invalid</div>
+
+            </div>
+            <div class="mb-3">
+                <input type="submit" value="login" [disabled]="form.invalid">
+            </div>
+        </form>
+    </div>
+    <div class="col-4"></div>
+</div>

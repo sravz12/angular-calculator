@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="mb-4">
+                <input type="text" [(ngModel)]="num1" class="form-control" placeholder="num 1">
+            </div>
+            <div class="mb-4">
+                <input type="text" [(ngModel)]="num2" class="form-control" placeholder="num 2">
+            </div>
+            <div class="mb-4 ">
+                <button class="btn btn-info" (click)="subNumbers()">Sub</button>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            Answer={{result}}
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
